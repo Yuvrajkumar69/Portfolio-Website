@@ -104,3 +104,86 @@ Work / Projects
 Career
       ↓
 Contact
+
+Portfolio-Website/
+│
+├── public/
+│   ├── draco/
+│   └── models/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Character/
+│   │   ├── styles/
+│   │   └── utils/
+│   ├── context/
+│   ├── data/
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.ts
+├── tsconfig.json
+├── eslint.config.js
+├── .gitignore
+├── LICENSE
+└── README.md
+
+⚙️ Getting Started
+Prerequisites
+Node.js
+npm
+Git
+Clone the Repository
+```bash
+git clone https://github.com/Yuvrajkumar69/Portfolio-Website.git
+cd Portfolio-Website
+```
+Install Dependencies
+```bash
+npm install
+```
+Start Development Server
+```bash
+npm run dev
+```
+---
+🏗️ Production Build
+```bash
+npm run build
+```
+Preview the production build locally:
+```bash
+npm run preview
+```
+---
+🌐 Deployment
+The portfolio is deployed using Vercel and connected directly to the GitHub repository.
+Live Website:  
+https://portfolio-website-eta-bice-59.vercel.app/
+---
+🔗 Links
+🌐 Portfolio: https://portfolio-website-eta-bice-59.vercel.app/
+💻 Repository: https://github.com/Yuvrajkumar69/Portfolio-Website
+👤 GitHub Profile: https://github.com/Yuvrajkumar69
+---
+👨‍💻 About Me
+I am a Java Full Stack Developer focused on building modern, scalable, and interactive web applications.
+My development interests include backend engineering with Java and Spring Boot, database development with MySQL, REST API development, and modern frontend technologies.
+I also enjoy experimenting with 3D web experiences and interactive frontend development using Three.js, WebGL, and GSAP.
+---
+📄 License
+This project is intended as a personal developer portfolio.
+---
+<p align="center">
+  <strong>Built with React • TypeScript • Three.js • WebGL • GSAP</strong>
+</p>
+<p align="center">
+  © Yuvraj Kumar
+</p>
