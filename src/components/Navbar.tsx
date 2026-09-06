@@ -2,24 +2,38 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import "./styles/Navbar.css";
 
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-export let smoother: ScrollSmoother;
+gsap.registerPlugin(ScrollTrigger);
+
+export interface Smoother {
+  paused: (isPaused: boolean) => void;
+  scrollTop: (value?: number) => void;
+  scrollTo: (target: string | HTMLElement | null, smooth?: boolean, position?: string) => void;
+  refresh: (force?: boolean) => void;
+}
+
+export const smoother: Smoother = {
+  paused(isPaused: boolean) {
+    document.body.style.overflow = isPaused ? "hidden" : "auto";
+  },
+  scrollTop(value: number = 0) {
+    window.scrollTo({ top: value, behavior: "instant" as ScrollBehavior });
+  },
+  scrollTo(target: string | HTMLElement | null, smooth: boolean = true) {
+    if (!target) return;
+    const el = typeof target === "string" ? document.querySelector(target) : target;
+    if (el) {
+      el.scrollIntoView({ behavior: smooth ? "smooth" : "auto" });
+    }
+  },
+  refresh() {
+    ScrollTrigger.refresh();
+  },
+};
 
 const Navbar = () => {
   useEffect(() => {
-    smoother = ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.7,
-      speed: 1.7,
-      effects: true,
-      autoResize: true,
-      ignoreMobileResize: true,
-    });
-
     smoother.scrollTop(0);
     smoother.paused(true);
 
@@ -36,9 +50,10 @@ const Navbar = () => {
       });
     });
     window.addEventListener("resize", () => {
-      ScrollSmoother.refresh(true);
+      smoother.refresh();
     });
   }, []);
+
   return (
     <>
       <div className="header">
@@ -70,7 +85,6 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-
       <div className="landing-circle1"></div>
       <div className="landing-circle2"></div>
       <div className="nav-fade"></div>
