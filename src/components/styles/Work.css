@@ -3,11 +3,9 @@
   font-size: 70px;
   font-weight: 500;
 }
-
-.work-section h2>span {
+.work-section h2 > span {
   color: var(--accentColor);
 }
-
 .work-section {
   transition: 0s;
   height: 100vh;
@@ -18,7 +16,6 @@
   isolation: isolate;
   z-index: 20;
 }
-
 .work-container {
   margin: auto;
   display: flex;
@@ -26,7 +23,6 @@
   height: 100%;
   align-content: stretch;
 }
-
 .work-flex {
   width: 100%;
   display: flex;
@@ -35,7 +31,6 @@
   padding-right: 120px;
   position: relative;
 }
-
 .work-box {
   padding: 80px;
   display: flex;
@@ -47,11 +42,9 @@
   gap: 50px;
   justify-content: start;
 }
-
 .work-flex .work-box:nth-child(even) {
   flex-direction: column-reverse;
 }
-
 .work-flex::before,
 .work-flex::after {
   content: "";
@@ -63,22 +56,18 @@
   top: 0;
   transform: translateX(-50%);
 }
-
 .work-flex::after {
   top: 100%;
 }
-
 .work-title {
   justify-content: space-between;
   display: flex;
   width: 100%;
   margin-bottom: 20px;
 }
-
-.work-title>div {
+.work-title > div {
   text-align: right;
 }
-
 .work-title h3 {
   font-size: 50px;
   line-height: 50px;
@@ -91,18 +80,15 @@
   font-weight: 400;
   margin: 0;
 }
-
 .work-info p {
   font-weight: 200;
   color: #adacac;
   margin: 0;
   margin-top: 3px;
 }
-
-.work-info>p {
+.work-info > p {
   width: 90%;
 }
-
 .work-desc {
   font-size: 13px !important;
   line-height: 19px !important;
@@ -111,7 +97,6 @@
   margin-bottom: 10px !important;
   font-weight: 300 !important;
 }
-
 .work-tools-label {
   font-size: 12px !important;
   text-transform: uppercase;
@@ -120,13 +105,11 @@
   font-weight: 500 !important;
   margin-bottom: 2px;
 }
-
 .work-tools-text {
   font-size: 12px !important;
   color: #a8a8a8 !important;
   line-height: 16px !important;
 }
-
 .work-highlights-list {
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +117,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .work-highlight-tag {
   font-size: 11px;
   background: rgba(255, 255, 255, 0.08);
@@ -144,13 +126,11 @@
   color: #e5e5e5;
   white-space: nowrap;
 }
-
 .work-actions {
   display: flex;
   gap: 10px;
   margin-top: 14px;
 }
-
 .work-btn {
   display: inline-flex;
   align-items: center;
@@ -166,24 +146,20 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .work-btn:hover {
   background: #9d4edd;
   border-color: #c77dff;
   color: #fff;
   box-shadow: 0 0 12px rgba(157, 78, 221, 0.6);
 }
-
 .work-image {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-
 .work-image-in {
   position: relative;
 }
-
 .work-link {
   position: absolute;
   bottom: 10px;
@@ -201,15 +177,12 @@
   transition: 0.3s;
   opacity: 0;
 }
-
 .work-image a:hover {
   color: inherit;
 }
-
 .work-image a:hover .work-link {
   opacity: 1;
 }
-
 .work-image video {
   position: absolute;
   width: 100%;
@@ -219,63 +192,51 @@
   background-color: #000;
   object-fit: cover;
 }
-
 .work-image img {
   max-width: 100%;
   max-height: 350px;
 }
-
 @media only screen and (max-height: 900px) {
   .work-image img {
     max-height: 250px;
   }
-
   .work-box {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   .work-section h2 {
     font-size: 60px;
     margin-bottom: 30px;
     margin-top: 70px;
   }
 }
-
 @media only screen and (max-width: 1400px) {
   .work-title h3 {
     font-size: 35px;
   }
-
   .work-info p {
     font-size: 13px;
   }
-
   .work-info h4 {
     font-size: 15px;
   }
-
   .work-box {
     width: 450px;
     padding: 50px;
   }
-
   .work-flex {
     margin-left: -50px;
     padding-right: 75px;
   }
-
   .work-section h2 {
     font-size: 50px;
   }
 }
-
 @media only screen and (max-width: 1400px) {
   .work-box {
     width: 350px;
     padding: 30px;
   }
-
   .work-flex {
     margin-left: -30px;
     padding-right: 45px;
@@ -286,17 +247,14 @@
   .work-image img {
     max-height: 200px;
   }
-
   .work-section h2 {
     font-size: 40px;
     margin-bottom: 20px;
   }
-
   .work-box {
     gap: 20px;
   }
 }
-
 /* @media only screen and (max-width: 900px) {
   .work-image img {
     max-height: 200px;
@@ -313,7 +271,6 @@
   .work-container {
     align-content: normal;
   }
-
   .work-flex {
     height: auto;
   }
