@@ -163,27 +163,41 @@ Preview the production build locally:
 npm run preview
 ```
 ---
-🌐 Deployment
-The portfolio is deployed using Vercel and connected directly to the GitHub repository.
-Live Website:  
-https://portfolio-website-eta-bice-59.vercel.app/
+## 🌐 Deployment
+
+The portfolio is deployed on Vercel and continuously connected to the GitHub repository for streamlined production deployments.
+
+**Live Portfolio:**  
+[portfolio-website-eta-bice-59.vercel.app](https://portfolio-website-eta-bice-59.vercel.app/)
+
 ---
-🔗 Links
-🌐 Portfolio: https://portfolio-website-eta-bice-59.vercel.app/
-💻 Repository: https://github.com/Yuvrajkumar69/Portfolio-Website
-👤 GitHub Profile: https://github.com/Yuvrajkumar69
+
+## 🔗 Connect & Explore
+
+- 🌐 **Portfolio:** [View Live Portfolio](https://portfolio-website-eta-bice-59.vercel.app/)
+- 💻 **Repository:** [View on GitHub](https://github.com/Yuvrajkumar69/Portfolio-Website)
+- 👤 **GitHub:** [Yuvraj Kumar](https://github.com/Yuvrajkumar69)
+
 ---
-👨‍💻 About Me
-I am a Java Full Stack Developer focused on building modern, scalable, and interactive web applications.
-My development interests include backend engineering with Java and Spring Boot, database development with MySQL, REST API development, and modern frontend technologies.
-I also enjoy experimenting with 3D web experiences and interactive frontend development using Three.js, WebGL, and GSAP.
+
+## 👨‍💻 About Me
+
+I’m a **Java Full Stack Developer** focused on building modern, scalable, and interactive web applications.
+
+My core interests include **Java, Spring Boot, REST APIs, MySQL, and modern frontend development**, along with creating immersive web experiences using **Three.js, WebGL, and GSAP**.
+
 ---
-📄 License
-This project is intended as a personal developer portfolio.
+
+## 📄 License
+
+This project is created as a personal developer portfolio.
+
 ---
+
 <p align="center">
   <strong>Built with React • TypeScript • Three.js • WebGL • GSAP</strong>
 </p>
+
 <p align="center">
-  © Yuvraj Kumar
+  © 2026 Yuvraj Kumar
 </p>
